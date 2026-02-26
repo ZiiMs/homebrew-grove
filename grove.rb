@@ -5,21 +5,21 @@
 class Grove < Formula
   desc "A TUI for managing multiple Claude Code agents with git worktree isolation"
   homepage "https://github.com/ZiiMs/grove"
-  version "0.0.2-test6"
+  version "0.1.3"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/ZiiMs/Grove/releases/download/v0.0.2-test6/grove_Darwin_x86_64.tar.gz"
-    sha256 "ea8f92addc05efd40fb1492d117b92548f7ac1416e23e1ea2cc06249569d0504"
+    url "https://github.com/ZiiMs/Grove/releases/download/v0.1.3/grove-ai_Darwin_x86_64.tar.gz"
+    sha256 "9ff4e5aa340969abb32639945af456cd92a93550b48e40b77e4c041805a5e152"
 
     define_method(:install) do
       bin.install "grove"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/ZiiMs/Grove/releases/download/v0.0.2-test6/grove_Darwin_arm64.tar.gz"
-    sha256 "8d9b0d31009df594b00d52b91cc3188e16adcb965920bc2df06df507976e424c"
+    url "https://github.com/ZiiMs/Grove/releases/download/v0.1.3/grove-ai_Darwin_arm64.tar.gz"
+    sha256 "d6b9d641bf9163d3bfd1a8cdcfbe31c0da1138bbd7fede22f34edae79de0bc3f"
 
     define_method(:install) do
       bin.install "grove"
